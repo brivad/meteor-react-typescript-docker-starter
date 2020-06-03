@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  meteor-app:
+    image: meteor-app
+    environment:
+      - ROOT_URL=http://www.meteor-app.com
+      - MONGO_URL="mongodb://mongo:27017/meteor
+    depends_on:
+      - mongo
+
+  mongo:
+    restart: always
+    image: mongo
