@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-  meteor-app:
+  app:
     image: meteor-app:dev
     build:
       context: .
@@ -10,7 +10,7 @@ services:
       - 3000:3000
     volumes:
       # - /app/node_modules
-      - ./node_modules:/app/node_modules # (per vscode) to update run docker-compose run meteor-app npm install
+      - ./node_modules:/app/node_modules # (for vscode) to update run docker-compose run app npm install
       - /app/.meteor/local
       - ./:/app
     environment:

@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-  meteor-app:
+  app:
     image: meteor-app
     environment:
       - ROOT_URL=http://www.meteor-app.com
