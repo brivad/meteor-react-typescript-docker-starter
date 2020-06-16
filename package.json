@@ -1,5 +1,5 @@
 {
-  "name": "meteor-app",
+  "name": "meteor-react-typescript-docker-starter",
   "private": true,
   "scripts": {
     "start": "meteor run",
